@@ -1,3 +1,23 @@
+// ============================================================
+// CONTENIDO EDITABLE DEL SITIO
+// ------------------------------------------------------------
+// Para imágenes/videos:
+//   - Coloca los archivos en /public/...  (ej: public/proyectos/ktsu/portada.jpg)
+//   - Referéncialos como "/proyectos/ktsu/portada.jpg"  (SIN /src/, SIN /public/)
+//   - Para video usa URL de YouTube/Vimeo o un .mp4 directo.
+// ============================================================
+
+export interface PortfolioItem {
+  title: string;
+  image?: string;
+  images?: string[];
+  video?: string;
+  description?: string;
+  year?: string;
+  area?: string;
+  location?: string;
+}
+
 export interface Service {
   id: string;
   number: string;
@@ -5,7 +25,7 @@ export interface Service {
   tag: string;
   description: string;
   bullets: string[];
-  portfolio: { title: string; image?: string }[]; // image optional → placeholder
+  portfolio: PortfolioItem[];
 }
 
 export const SERVICES: Service[] = [
@@ -88,7 +108,11 @@ export interface Project {
   category: "Residencial" | "Comercial" | "Interiores";
   year: string;
   location: string;
+  area?: string;
   description: string;
+  image?: string;       // imagen de portada
+  images?: string[];    // galería opcional
+  video?: string;       // url youtube / vimeo / mp4
 }
 
 export const PROJECTS: Project[] = [
@@ -102,13 +126,17 @@ export const PROJECTS: Project[] = [
       "Una vivienda unifamiliar pensada como un patio interior que organiza la vida alrededor del verde.",
   },
   {
-    id: "restaurante-k'tsu",
+    id: "restaurante-ktsu",
     title: "K'tsu",
     category: "Comercial",
     year: "2024",
     location: "Valencia, Carabobo",
+    area: "320 m²",
     description:
       "Diseño elegante y sensorial que traduce su arquitectura moderna y atmósfera envolvente en una experiencia visual coherente, premium y orientada al detalle.",
+    image: "/proyectos/ktsu/portada.jpg",
+    // images: ["/proyectos/ktsu/01.jpg", "/proyectos/ktsu/02.jpg"],
+    // video: "https://www.youtube.com/watch?v=XXXXX",
   },
   {
     id: "loft-valencia",
