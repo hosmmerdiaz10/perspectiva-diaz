@@ -148,5 +148,8 @@ export const PROJECTS: Project[] = [
     location: "Valencia, Carabobo",
     description:
       "Arquitectura de cocina que equilibra eficiencia y diseño: circulación fluida, iluminación estratégica y una composición sólida y elegante.",
+     image: "/proyectos/cocina-lt/portada-2.JPEG",
+    // images: ["/proyectos/cocina-lt/02.JPEG", "/proyectos/cocina-lt/02.JPEG"],
+    // video: "https://www.youtube.com/watch?v=XXXXX",
   },
 ];
