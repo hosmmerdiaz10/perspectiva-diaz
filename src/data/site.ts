@@ -120,7 +120,7 @@ export const PROJECTS: Project[] = [
     id: "spa",
     title: "SPA",
     category: "Arquitectura Comercial ",
-    year: "2025",
+    year: "2026",
     location: "Valencia, Carabobo",
     description:
       "Un diseño personalizado para un SPA donde la arquitectura acompaña el proceso: diseño limpio, proporciones equilibradas y una atmósfera pensada para generar seguridad y bienestar.",
