@@ -117,15 +117,15 @@ export interface Project {
 
 export const PROJECTS: Project[] = [
   {
-    id: "consultorio",
-    title: "Consultorio",
+    id: "spa",
+    title: "SPA",
     category: "Arquitectura Comercial ",
     year: "2025",
     location: "Valencia, Carabobo",
     description:
-      "Un consultorio donde la arquitectura acompaña el proceso: diseño limpio, proporciones equilibradas y una atmósfera pensada para generar seguridad y bienestar.",
-    image: "/proyectos/consultorio/portada-3.jpg",   
-    // images: ["/proyectos/consultorio/03.jpg", "/proyectos/consultorio/03.jpg"],
+      "Un diseño personalizado para un SPA donde la arquitectura acompaña el proceso: diseño limpio, proporciones equilibradas y una atmósfera pensada para generar seguridad y bienestar.",
+    image: "/proyectos/spa/portada-3.jpg",   
+    // images: ["/proyectos/spa/03.jpg", "/proyectos/spa/03.jpg"],
     // video: "https://www.youtube.com/watch?v=XXXXX",
   },
   {
