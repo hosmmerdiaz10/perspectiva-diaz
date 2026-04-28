@@ -1,11 +1,20 @@
+// ============================================================
+// CONTENIDO EDITABLE DEL SITIO
+// ------------------------------------------------------------
+// Para imágenes/videos:
+//   - Coloca los archivos en /public/...  (ej: public/proyectos/ktsu/portada.jpg)
+//   - Referéncialos como "/proyectos/ktsu/portada.jpg"  (SIN /src/, SIN /public/)
+//   - Para video usa URL de YouTube/Vimeo o un .mp4 directo.
+// ============================================================
+
 export interface PortfolioItem {
   title: string;
-  image?: string;        // ruta de imagen principal (ej: "/src/assets/casa-1.jpg" o import)
-  images?: string[];     // galería opcional
-  video?: string;        // URL de YouTube/Vimeo o archivo .mp4
-  description?: string;  // descripción del proyecto
+  image?: string;
+  images?: string[];
+  video?: string;
+  description?: string;
   year?: string;
-  area?: string;         // ej: "180 m²"
+  area?: string;
   location?: string;
 }
 
@@ -29,10 +38,10 @@ export const SERVICES: Service[] = [
       "Casas, apartamentos y viviendas unifamiliares diseñadas en función de quien las habita, la luz y el entorno.",
     bullets: ["Anteproyecto y diseño", "Planos ejecutivos", "Memoria descriptiva"],
     portfolio: [
-      { title: "Casa Bosque Norte", year: "2024", area: "240 m²", location: "Guacara" },
-      { title: "Residencia Las Acacias", year: "2023", area: "180 m²", location: "Valencia" },
-      { title: "Apartamento Mañongo", year: "2024", area: "120 m²", location: "Naguanagua" },
-      { title: "Casa Patio Interior", year: "2022", area: "210 m²", location: "Guacara" },
+      { title: "Casa Bosque Norte" },
+      { title: "Residencia Las Acacias" },
+      { title: "Apartamento Mañongo" },
+      { title: "Casa Patio Interior" },
     ],
   },
   {
@@ -44,9 +53,9 @@ export const SERVICES: Service[] = [
       "Oficinas, locales y espacios de trabajo que comunican la identidad de cada marca con materialidad y luz.",
     bullets: ["Branding espacial", "Layout funcional", "Iluminación técnica"],
     portfolio: [
-      { title: "Oficinas Atelier", year: "2023", area: "320 m²", location: "Valencia" },
-      { title: "Boutique Centro", year: "2024", area: "85 m²", location: "Valencia" },
-      { title: "Café Industrial", year: "2023", area: "140 m²", location: "Guacara" },
+      { title: "Oficinas Atelier" },
+      { title: "Boutique Centro" },
+      { title: "Café Industrial" },
     ],
   },
   {
@@ -58,9 +67,9 @@ export const SERVICES: Service[] = [
       "Materialidad, iluminación y mobiliario seleccionados para crear atmósferas que perduran en el tiempo.",
     bullets: ["Moodboard y paleta", "Selección de mobiliario", "Dirección de obra"],
     portfolio: [
-      { title: "Loft Valencia", year: "2024", area: "95 m²", location: "Valencia" },
-      { title: "Penthouse Guacara", year: "2023", area: "260 m²", location: "Guacara" },
-      { title: "Suite Master", year: "2024", area: "45 m²", location: "Naguanagua" },
+      { title: "Loft Valencia" },
+      { title: "Penthouse Guacara" },
+      { title: "Suite Master" },
     ],
   },
   {
@@ -72,9 +81,9 @@ export const SERVICES: Service[] = [
       "Imágenes fotorrealistas para experimentar el proyecto antes de construirlo y tomar mejores decisiones.",
     bullets: ["Render exterior / interior", "Animaciones cortas", "Recorridos virtuales"],
     portfolio: [
-      { title: "Render Casa Bosque", year: "2024" },
-      { title: "Recorrido Oficinas", year: "2023" },
-      { title: "Vista aérea conjunto", year: "2024" },
+      { title: "Render Casa Bosque" },
+      { title: "Recorrido Oficinas" },
+      { title: "Vista aérea conjunto" },
     ],
   },
   {
@@ -86,9 +95,9 @@ export const SERVICES: Service[] = [
       "Control de calidad, tiempos y presupuesto durante toda la ejecución del proyecto.",
     bullets: ["Cronograma de obra", "Control de costos", "Supervisión técnica"],
     portfolio: [
-      { title: "Obra Residencia A.", year: "2024", location: "Guacara" },
-      { title: "Remodelación local 12", year: "2023", location: "Valencia" },
-      { title: "Ampliación quinta", year: "2024", location: "Guacara" },
+      { title: "Obra Residencia A." },
+      { title: "Remodelación local 12" },
+      { title: "Ampliación quinta" },
     ],
   },
 ];
@@ -99,11 +108,11 @@ export interface Project {
   category: "Residencial" | "Comercial" | "Interiores";
   year: string;
   location: string;
-  description: string;
-  image?: string;
-  images?: string[];
-  video?: string;
   area?: string;
+  description: string;
+  image?: string;       // imagen de portada
+  images?: string[];    // galería opcional
+  video?: string;       // url youtube / vimeo / mp4
 }
 
 export const PROJECTS: Project[] = [
@@ -113,12 +122,11 @@ export const PROJECTS: Project[] = [
     category: "Residencial",
     year: "2024",
     location: "Guacara, Carabobo",
-    area: "240 m²",
     description:
       "Una vivienda unifamiliar pensada como un patio interior que organiza la vida alrededor del verde.",
   },
   {
-    id: "restaurante-k'tsu",
+    id: "restaurante-ktsu",
     title: "K'tsu",
     category: "Comercial",
     year: "2024",
@@ -126,6 +134,9 @@ export const PROJECTS: Project[] = [
     area: "320 m²",
     description:
       "Diseño elegante y sensorial que traduce su arquitectura moderna y atmósfera envolvente en una experiencia visual coherente, premium y orientada al detalle.",
+    image: "/proyectos/ktsu/portada.jpg",
+    // images: ["/proyectos/ktsu/01.jpg", "/proyectos/ktsu/02.jpg"],
+    // video: "https://www.youtube.com/watch?v=XXXXX",
   },
   {
     id: "loft-valencia",
@@ -133,7 +144,6 @@ export const PROJECTS: Project[] = [
     category: "Interiores",
     year: "2024",
     location: "Valencia, Carabobo",
-    area: "95 m²",
     description:
       "Reinterpretación de un apartamento existente con materiales nobles, paleta cálida y una atmósfera serena.",
   },
