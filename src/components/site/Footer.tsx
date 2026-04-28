@@ -11,8 +11,9 @@ export const Footer = () => (
             Diseñamos espacios que <span className="italic-serif">cuentan historias</span> y perduran en el tiempo.
           </p>
           <p className="mt-6 text-sm text-background/60 max-w-sm leading-relaxed">
-            Estudio de arquitectura y diseño interior con base en Guacara, Carabobo. Trabajamos en todo
-            el territorio venezolano y proyectos remotos.
+            Estudio de arquitectura e interiorismo con sede en Valencia, Venezuela.
+            Con una visión global y ejecución local, diseñamos espacios excepcionales en todo el territorio nacional y mediante consultoría remota internacional.
+            Transformamos conceptos en realidades, sin importar la distancia.
           </p>
         </div>
 
@@ -21,7 +22,7 @@ export const Footer = () => (
           <ul className="space-y-3 text-sm">
             <li><a href={`https://wa.me/${WHATSAPP_NUMBER}`} target="_blank" rel="noreferrer" className="link-underline">WhatsApp</a></li>
             <li><a href="mailto:perspectiva.diaz2@gmail.com" className="link-underline">perspectiva.diaz2@gmail.com</a></li>
-            <li className="text-background/60">Guacara · Valencia</li>
+            <li className="text-background/60">Valencia</li>
             <li className="text-background/60">Venezuela</li>
           </ul>
         </div>
