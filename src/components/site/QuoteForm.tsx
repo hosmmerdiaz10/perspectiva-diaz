@@ -84,11 +84,8 @@ export const QuoteForm = () => {
               </SelectContent>
             </Select>
           </Field>
-          <Field label="Área aproximada (m²)">
+          <Field label="Área aproximada (m²)" className="sm:col-span-2">
             <Input type="number" min="0" value={form.area} onChange={(e) => update("area")(e.target.value)} />
-          </Field>
-          <Field label="Presupuesto estimado (USD)">
-            <Input value={form.presupuesto} onChange={(e) => update("presupuesto")(e.target.value)} placeholder="Opcional" />
           </Field>
           <Field label="Cuéntanos sobre tu proyecto *" className="sm:col-span-2">
             <Textarea

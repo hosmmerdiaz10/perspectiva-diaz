@@ -9,7 +9,7 @@ export interface QuoteForm {
   tipoProyecto: string;
   ubicacion: string;
   area: string;
-  presupuesto: string;
+  presupuesto?: string;
   mensaje: string;
 }
 
@@ -24,7 +24,6 @@ export function buildQuoteMessage(d: Partial<QuoteForm>): string {
     `• *Tipo de proyecto:* ${d.tipoProyecto || "—"}`,
     `• *Ubicación:* ${d.ubicacion || "—"}`,
     `• *Área aprox. (m²):* ${d.area || "—"}`,
-    `• *Presupuesto estimado:* ${d.presupuesto || "—"}`,
     "",
     "*Mensaje:*",
     d.mensaje || "—",
