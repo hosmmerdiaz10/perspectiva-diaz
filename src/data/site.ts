@@ -131,7 +131,6 @@ export const PROJECTS: Project[] = [
     category: "Comercial",
     year: "2024",
     location: "Valencia, Carabobo",
-    area: "320 m²",
     description:
       "Diseño elegante y sensorial que traduce su arquitectura moderna y atmósfera envolvente en una experiencia visual coherente, premium y orientada al detalle.",
     image: "/proyectos/ktsu/portada.jpg",
