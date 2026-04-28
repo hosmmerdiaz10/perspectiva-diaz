@@ -124,6 +124,9 @@ export const PROJECTS: Project[] = [
     location: "Valencia, Carabobo",
     description:
       "Un consultorio donde la arquitectura acompaña el proceso: diseño limpio, proporciones equilibradas y una atmósfera pensada para generar seguridad y bienestar.",
+    image: "/proyectos/consultorio/portada-3.jpg",   
+    // images: ["/proyectos/consultorio/03.jpg", "/proyectos/consultorio/03.jpg"],
+    // video: "https://www.youtube.com/watch?v=XXXXX",
   },
   {
     id: "restaurante-ktsu",
