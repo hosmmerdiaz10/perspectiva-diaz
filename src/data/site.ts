@@ -117,13 +117,13 @@ export interface Project {
 
 export const PROJECTS: Project[] = [
   {
-    id: "casa-bosque-norte",
-    title: "Casa Bosque Norte",
-    category: "Residencial",
-    year: "2024",
-    location: "Guacara, Carabobo",
+    id: "consultorio",
+    title: "Consultorio",
+    category: "Arquitectura Comercial ",
+    year: "2025",
+    location: "Valencia, Carabobo",
     description:
-      "Una vivienda unifamiliar pensada como un patio interior que organiza la vida alrededor del verde.",
+      "Un consultorio donde la arquitectura acompaña el proceso: diseño limpio, proporciones equilibradas y una atmósfera pensada para generar seguridad y bienestar.",
   },
   {
     id: "restaurante-ktsu",
