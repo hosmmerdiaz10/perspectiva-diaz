@@ -138,12 +138,12 @@ export const PROJECTS: Project[] = [
     // video: "https://www.youtube.com/watch?v=XXXXX",
   },
   {
-    id: "loft-valencia",
-    title: "Loft Valencia",
+    id: "cocina-lt",
+    title: "Diseño de Cocina",
     category: "Interiores",
-    year: "2024",
+    year: "2025",
     location: "Valencia, Carabobo",
     description:
-      "Reinterpretación de un apartamento existente con materiales nobles, paleta cálida y una atmósfera serena.",
+      "Arquitectura de cocina que equilibra eficiencia y diseño: circulación fluida, iluminación estratégica y una composición sólida y elegante.",
   },
 ];
