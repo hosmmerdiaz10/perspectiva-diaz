@@ -108,7 +108,7 @@ export const PROJECTS: Project[] = [
     year: "2024",
     location: "Valencia, Carabobo",
     description:
-      "diseño elegante y sensorial que traduce su arquitectura moderna y atmósfera envolvente en una experiencia visual coherente, premium y orientada al detalle.",
+      "Diseño elegante y sensorial que traduce su arquitectura moderna y atmósfera envolvente en una experiencia visual coherente, premium y orientada al detalle.",
   },
   {
     id: "loft-valencia",
