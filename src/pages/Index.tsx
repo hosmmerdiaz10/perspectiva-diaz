@@ -11,7 +11,7 @@ import { WhatsAppFab } from "@/components/site/WhatsAppFab";
 const Index = () => {
   useEffect(() => {
     document.title = "Perspectiva Díaz · Arquitectura y Diseño · Guacara, Venezuela";
-    const desc = "Estudio de arquitectura y diseño en Guacara, Venezuela. Proyectos residenciales, comerciales, interiores y renders 3D. Cotiza por WhatsApp.";
+    const desc = "Estudio de arquitectura y diseño. Proyectos residenciales, comerciales, interiores y renders 3D. Cotiza por WhatsApp.";
     let meta = document.querySelector('meta[name="description"]');
     if (!meta) {
       meta = document.createElement("meta");
