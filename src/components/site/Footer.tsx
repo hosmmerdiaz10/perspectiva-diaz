@@ -20,7 +20,7 @@ export const Footer = () => (
           <p className="text-[10px] tracking-[0.4em] uppercase text-background/50 mb-5">Contacto</p>
           <ul className="space-y-3 text-sm">
             <li><a href={`https://wa.me/${WHATSAPP_NUMBER}`} target="_blank" rel="noreferrer" className="link-underline">WhatsApp</a></li>
-            <li><a href="mailto:hola@perspectivadiaz.com" className="link-underline">hola@perspectivadiaz.com</a></li>
+            <li><a href="mailto:perspectiva.diaz2@gmail.com" className="link-underline">perspectiva.diaz2@gmail.com</a></li>
             <li className="text-background/60">Guacara · Valencia</li>
             <li className="text-background/60">Venezuela</li>
           </ul>
