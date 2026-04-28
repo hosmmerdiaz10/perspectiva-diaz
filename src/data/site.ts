@@ -102,13 +102,13 @@ export const PROJECTS: Project[] = [
       "Una vivienda unifamiliar pensada como un patio interior que organiza la vida alrededor del verde.",
   },
   {
-    id: "oficinas-atelier",
-    title: "Oficinas Atelier",
+    id: "restaurante-k'tsu",
+    title: "K'tsu",
     category: "Comercial",
-    year: "2023",
+    year: "2024",
     location: "Valencia, Carabobo",
     description:
-      "Espacio de trabajo creativo donde la luz natural y el mobiliario a medida construyen la identidad de la marca.",
+      "diseño elegante y sensorial que traduce su arquitectura moderna y atmósfera envolvente en una experiencia visual coherente, premium y orientada al detalle.",
   },
   {
     id: "loft-valencia",
