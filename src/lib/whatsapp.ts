@@ -1,5 +1,5 @@
 // 🔧 Reemplaza este número con el real (formato internacional, sin "+", sin espacios)
-export const WHATSAPP_NUMBER = "584125018878";
+export const WHATSAPP_NUMBER = "+584125018878";
 
 export interface QuoteForm {
   nombre: string;
