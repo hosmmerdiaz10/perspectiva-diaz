@@ -38,7 +38,20 @@ export const SERVICES: Service[] = [
       "Casas, apartamentos y viviendas unifamiliares diseñadas en función de quien las habita, la luz y el entorno.",
     bullets: ["Anteproyecto y diseño", "Planos ejecutivos", "Memoria descriptiva"],
     portfolio: [
-      { title: "Casa Bosque Norte" },
+      {
+        title: "Cocina LT",
+        image: "/servicios/residencial/cocina-lt/portada.jpg",
+        year: "2025",
+        location: "Valencia, Carabobo",
+        description:
+          "Arquitectura de cocina que equilibra eficiencia y diseño: circulación fluida, iluminación estratégica y una composición sólida y elegante.",
+        images: [
+          "/servicios/residencial/cocina-lt/01.jpg",
+          // Agrega aquí más imágenes/gifs cuando subas:
+          // "/servicios/residencial/cocina-lt/02.jpg",
+        ],
+        // video: "https://www.youtube.com/watch?v=XXXXX",
+      },
       { title: "Residencia Las Acacias" },
       { title: "Apartamento Mañongo" },
       { title: "Casa Patio Interior" },
@@ -119,7 +132,7 @@ export const PROJECTS: Project[] = [
   {
     id: "spa",
     title: "SPA",
-    category: "Arquitectura Comercial ",
+    category: "Comercial",
     year: "2026",
     location: "Valencia, Carabobo",
     description:
