@@ -49,6 +49,12 @@ export const SERVICES: Service[] = [
           "/servicios/residencial/cocina-lt/01.jpg",
           // Agrega aquí más imágenes/gifs cuando subas:
           // "/servicios/residencial/cocina-lt/02.jpg",
+          // "/servicios/residencial/cocina-lt/03.jpg",
+          // "/servicios/residencial/cocina-lt/04.jpg",
+          // "/servicios/residencial/cocina-lt/05.jpg",
+          // "/servicios/residencial/cocina-lt/06.jpg",
+          // "/servicios/residencial/cocina-lt/07.jpg",
+          // "/servicios/residencial/cocina-lt/08.jpg",
         ],
         // video: "https://www.youtube.com/watch?v=XXXXX",
       },
