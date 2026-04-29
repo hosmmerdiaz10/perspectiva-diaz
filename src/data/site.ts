@@ -57,7 +57,23 @@ export const SERVICES: Service[] = [
         ],
         // video: "https://www.youtube.com/watch?v=XXXXX",
       },
-      { title: "Residencia Las Acacias" },
+      { title: "Cocina OA" 
+              image: "/servicios/residencial/cocina-oa/portada.png",
+        year: "2025",
+        location: "Valencia, Carabobo",
+        description:
+          "Renderizado de cocina que equilibra eficiencia y diseño: circulación fluida, iluminación estratégica y una composición sólida y elegante.",
+        images: [
+          "/servicios/residencial/cocina-oa/02.png",
+          "/servicios/residencial/cocina-oa/03.png",
+          "/servicios/residencial/cocina-oa/04.png",
+          "/servicios/residencial/cocina-oa/05.png",
+          "/servicios/residencial/cocina-oa/06.png",
+          "/servicios/residencial/cocina-oa/07.png",
+          "/servicios/residencial/cocina-oa/08.png",
+          // Agrega aquí más imágenes/gifs cuando subas:
+        ],
+      },
       { title: "Apartamento Mañongo" },
       { title: "Casa Patio Interior" },
     ],
