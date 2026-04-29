@@ -40,19 +40,22 @@ export const SERVICES: Service[] = [
     portfolio: [
       {
         title: "Cocina LT",
-        image: "/servicios/residencial/cocina-lt/portada.jpg",
+        image: "/servicios/residencial/cocina-lt/portada.JPEG",
         year: "2025",
         location: "Valencia, Carabobo",
         description:
           "Arquitectura de cocina que equilibra eficiencia y diseño: circulación fluida, iluminación estratégica y una composición sólida y elegante.",
         images: [
-          "/servicios/residencial/cocina-lt/02.JPEG",
-          "/servicios/residencial/cocina-lt/03.JPEG",
-          "/servicios/residencial/cocina-lt/04.JPEG",
-          "/servicios/residencial/cocina-lt/05.JPEG",
-          "/servicios/residencial/cocina-lt/06.JPEG",
-          "/servicios/residencial/cocina-lt/07.JPG",
-          "/servicios/residencial/cocina-lt/08.JPG",
+          "/servicios/residencial/cocina-lt/antes1.jpg",
+          "/servicios/residencial/cocina-lt/antes2.jpg",
+          "/servicios/residencial/cocina-lt/antes3.DNG",
+          "/servicios/residencial/cocina-lt/render1.png",
+          "/servicios/residencial/cocina-lt/render2.png",
+          "/servicios/residencial/cocina-lt/render3.png",
+          "/servicios/residencial/cocina-lt/final1.JPEG",
+          "/servicios/residencial/cocina-lt/final2.JPEG",
+          "/servicios/residencial/cocina-lt/final3.JPEG",
+          "/servicios/residencial/cocina-lt/final4.JPG",
           // Agrega aquí más imágenes/gifs cuando subas:
         ],
         // video: "https://www.youtube.com/watch?v=XXXXX",
