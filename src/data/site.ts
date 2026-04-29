@@ -61,7 +61,7 @@ export const SERVICES: Service[] = [
         // video: "https://www.youtube.com/watch?v=XXXXX",
       },
       { title: "Cocina OA" 
-              image: "/servicios/residencial/cocina-oa/portada.png",
+        image: "/servicios/residencial/cocina-oa/portada.png",
         year: "2025",
         location: "Valencia, Carabobo",
         description:
@@ -77,7 +77,22 @@ export const SERVICES: Service[] = [
           // Agrega aquí más imágenes/gifs cuando subas:
         ],
       },
-      { title: "Apartamento Mañongo" },
+      { title: "Baño y Habitación Principal" 
+        image: "/servicios/residencial/bañoyhabitacion/portada.png",
+        year: "2025",
+        location: "Valencia, Carabobo",
+        description:
+          "Renderizado de cocina que equilibra eficiencia y diseño: circulación fluida, iluminación estratégica y una composición sólida y elegante.",
+        images: [
+          "/servicios/residencial/bañoyhabitacion/baño1.png",
+          "/servicios/residencial/bañoyhabitacion/baño2.png",
+          "/servicios/residencial/bañoyhabitacion/baño3.png",
+          "/servicios/residencial/bañoyhabitacion/01.png",
+          "/servicios/residencial/bañoyhabitacion/02.png",
+          "/servicios/residencial/bañoyhabitacion/03.png",
+          // Agrega aquí más imágenes/gifs cuando subas:
+        ],
+      },
       { title: "Casa Patio Interior" },
     ],
   },
