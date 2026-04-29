@@ -44,7 +44,7 @@ export const SERVICES: Service[] = [
         year: "2025",
         location: "Valencia, Carabobo",
         description:
-          "Arquitectura de cocina que equilibra eficiencia y diseño: circulación fluida, iluminación estratégica y una composición sólida y elegante.",
+          "Diseño, renderizado y ejecución integral de cocina, combinando funcionalidad, elegancia y una distribución pensada al detalle.",
         images: [
           "/servicios/residencial/cocina-lt/antes1.jpg",
           "/servicios/residencial/cocina-lt/antes2.jpg",
@@ -65,7 +65,7 @@ export const SERVICES: Service[] = [
         year: "2025",
         location: "Valencia, Carabobo",
         description:
-          "Renderizado de cocina que equilibra eficiencia y diseño: circulación fluida, iluminación estratégica y una composición sólida y elegante.",
+          "Diseño y renderizado de cocina, con foco en la estética, la iluminación y una composición moderna y equilibrada.",
         images: [
           "/servicios/residencial/cocina-oa/01.png",
           "/servicios/residencial/cocina-oa/02.png",
@@ -82,7 +82,7 @@ export const SERVICES: Service[] = [
         year: "2025",
         location: "Valencia, Carabobo",
         description:
-          "Renderizado de cocina que equilibra eficiencia y diseño: circulación fluida, iluminación estratégica y una composición sólida y elegante.",
+          "Diseño y renderizado de habitación principal y baño, combinando confort, funcionalidad y una estética moderna con detalles cuidadosamente integrados.",
         images: [
           "/servicios/residencial/cocinayhabitacion/bano1.png",
           "/servicios/residencial/cocinayhabitacion/bano2.png",
@@ -99,7 +99,7 @@ export const SERVICES: Service[] = [
         year: "2025",
         location: "Valencia, Carabobo",
         description:
-          "Renderizado de cocina que equilibra eficiencia y diseño: circulación fluida, iluminación estratégica y una composición sólida y elegante.",
+          "Diseño y visualización de habitación integrando calidez, equilibrio espacial y una ambientación cuidada en cada detalle.",
         images: [
           "/servicios/residencial/habitacion-gb/01.png",
           "/servicios/residencial/habitacion-gb/02.png",
@@ -121,11 +121,56 @@ export const SERVICES: Service[] = [
       "Oficinas, locales y espacios de trabajo que comunican la identidad de cada marca con materialidad y luz.",
     bullets: ["Branding espacial", "Layout funcional", "Iluminación técnica"],
     portfolio: [
-      { title: "Oficinas Atelier" },
-      { title: "Boutique Centro" },
-      { title: "Café Industrial" },
-    ],
-  },
+      { title: "SPA",
+              image: "/servicios/comercial/spa/portada.png",
+        year: "2025",
+        location: "Valencia, Carabobo",
+        description:
+          "Diseño, renderizado y ejecución de spa comercial, desarrollando una experiencia sofisticada mediante una ambientación relajante, iluminación envolvente y una identidad estética equilibrada.",
+        images: [
+          "/servicios/comercial/spa/01.png",
+          "/servicios/comercial/spa/02.png",
+          "/servicios/comercial/spa/03.png",
+          "/servicios/comercial/spa/04.png",
+          "/servicios/comercial/spa/05.png",
+          "/servicios/comercial/spa/06.png",
+          "/servicios/comercial/spa/07.png",
+        ],
+      },
+      { title: "Consultorio",
+              image: "/servicios/comercial/consultorio/portada.png",
+        year: "2025",
+        location: "Valencia, Carabobo",
+        description:
+          "Diseño y renderizado de consultorio de cirugía plástica, combinando una estética sofisticada, iluminación equilibrada y una atmósfera moderna orientada al confort y la confianza.",
+        images: [
+          "/servicios/comercial/consultorio/01.png",
+          "/servicios/comercial/consultorio/02.png",
+          "/servicios/comercial/consultorio/03.png",
+          "/servicios/comercial/consultorio/04.png",
+          "/servicios/comercial/consultorio/05.png",
+          "/servicios/comercial/consultorio/06.png",
+          "/servicios/comercial/consultorio/07.png",
+        ],      
+      },
+      { title: "xxxxxxxxx",
+        image: "/servicios/comercial/xxx/portada.png",
+        year: "2025",
+        location: "Valencia, Carabobo",
+        description:
+          "Diseño, renderizado y ejecución de spa comercial, desarrollando una experiencia sofisticada mediante una ambientación relajante, iluminación envolvente y una identidad estética equilibrada.",
+        images: [
+          "/servicios/comercial/xx/01.png",
+          "/servicios/comercial/xx/02.png",
+          "/servicios/comercial/xx/03.png",
+          "/servicios/comercial/xx/04.png",
+          "/servicios/comercial/xx/05.png",
+          "/servicios/comercial/xx/06.png",
+          "/servicios/comercial/xx/07.png",
+        ],
+      },  
+    ],    
+  },      
   {
     id: "interiores",
     number: "03",
