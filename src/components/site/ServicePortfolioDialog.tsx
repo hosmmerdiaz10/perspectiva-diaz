@@ -11,6 +11,7 @@ interface Props {
 export const ServicePortfolioDialog = ({ service, onClose }: Props) => {
   const [selectedProject, setSelectedProject] = useState<PortfolioItem | null>(null);
   return (
+    <>
     <Dialog open={!!service} onOpenChange={(o) => !o && onClose()}>
       <DialogContent className="max-w-5xl bg-background border-border max-h-[90vh] overflow-y-auto">
         {service && (
@@ -85,5 +86,7 @@ export const ServicePortfolioDialog = ({ service, onClose }: Props) => {
         )}
       </DialogContent>
     </Dialog>
+    <ProjectDetailDialog project={selectedProject} onClose={() => setSelectedProject(null)} />
+    </>
   );
 };
