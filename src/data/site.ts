@@ -93,8 +93,9 @@ export const SERVICES: Service[] = [
           // Agrega aquí más imágenes/gifs cuando subas:
         ],
       },
-      { title: "Habitación GB", 
-              image: "/servicios/residencial/habitacion-gb/portada.png",
+      { 
+        title: "Habitación GB", 
+        image: "/servicios/residencial/habitacion-gb/portada.png",
         year: "2025",
         location: "Valencia, Carabobo",
         description:
@@ -107,10 +108,10 @@ export const SERVICES: Service[] = [
           "/servicios/residencial/habitacion-gb/05.png",
           "/servicios/residencial/habitacion-gb/06.png",
           "/servicios/residencial/habitacion-gb/07.png",
-          // Agrega aquí más imágenes/gifs cuando subas:
         ],
-     ],
-  },
+      },  
+    ],    
+  },      
   {
     id: "comercial",
     number: "02",
