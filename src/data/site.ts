@@ -60,7 +60,7 @@ export const SERVICES: Service[] = [
         ],
         // video: "https://www.youtube.com/watch?v=XXXXX",
       },
-      { title: "Cocina OA" 
+      { title: "Cocina OA",
         image: "/servicios/residencial/cocina-oa/portada.png",
         year: "2025",
         location: "Valencia, Carabobo",
@@ -77,7 +77,7 @@ export const SERVICES: Service[] = [
           // Agrega aquí más imágenes/gifs cuando subas:
         ],
       },
-      { title: "Baño y Habitación Principal" 
+      { title: "Baño y Habitación Principal",
         image: "/servicios/residencial/bañoyhabitacion/portada.png",
         year: "2025",
         location: "Valencia, Carabobo",
