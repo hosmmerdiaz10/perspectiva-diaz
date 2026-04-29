@@ -93,8 +93,22 @@ export const SERVICES: Service[] = [
           // Agrega aquí más imágenes/gifs cuando subas:
         ],
       },
-      { title: "Casa Patio Interior" },
-    ],
+      { title: "Habitación GB", 
+              image: "/servicios/residencial/habitacion-gb/portada.png",
+        year: "2025",
+        location: "Valencia, Carabobo",
+        description:
+          "Renderizado de cocina que equilibra eficiencia y diseño: circulación fluida, iluminación estratégica y una composición sólida y elegante.",
+        images: [
+          "/servicios/residencial/habitacion-gb/01.png",
+          "/servicios/residencial/habitacion-gb/02.png",
+          "/servicios/residencial/habitacion-gb/03.png",
+          "/servicios/residencial/habitacion-gb/04.png",
+          "/servicios/residencial/habitacion-gb/05.png",
+          "/servicios/residencial/habitacion-gb/06.png",
+          "/servicios/residencial/habitacion-gb/07.png",
+          // Agrega aquí más imágenes/gifs cuando subas:
+        ],
   },
   {
     id: "comercial",
