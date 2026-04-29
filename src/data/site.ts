@@ -137,7 +137,6 @@ export const SERVICES: Service[] = [
           "/servicios/comercial/consultorio/04.png",
           "/servicios/comercial/consultorio/05.png",
           "/servicios/comercial/consultorio/06.png",
-          "/servicios/comercial/consultorio/07.png",
         ],      
       },
       { title: "Salon de Pilates",
@@ -145,7 +144,7 @@ export const SERVICES: Service[] = [
         year: "2025",
         location: "Valencia, Carabobo",
         description:
-          "Diseño, renderizado y ejecución de spa comercial, desarrollando una experiencia sofisticada mediante una ambientación relajante, iluminación envolvente y una identidad estética equilibrada.",
+          "Diseño y renderizado, desarrollando una experiencia sofisticada mediante una ambientación relajante, iluminación envolvente y una identidad estética equilibrada.",
         images: [
           "/servicios/comercial/pilates/1.png",
           "/servicios/comercial/pilates/2.png",
