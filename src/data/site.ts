@@ -109,8 +109,7 @@ export const SERVICES: Service[] = [
           "/servicios/residencial/habitacion-gb/07.png",
           // Agrega aquí más imágenes/gifs cuando subas:
         ],
-       },
-     ], 
+     ],
   },
   {
     id: "comercial",
