@@ -48,7 +48,7 @@ export const SERVICES: Service[] = [
         images: [
           "/servicios/residencial/cocina-lt/antes1.jpg",
           "/servicios/residencial/cocina-lt/antes2.jpg",
-          "/servicios/residencial/cocina-lt/antes3.DNG",
+          "/servicios/residencial/cocina-lt/antes3.jpg",
           "/servicios/residencial/cocina-lt/render1.png",
           "/servicios/residencial/cocina-lt/render2.png",
           "/servicios/residencial/cocina-lt/render3.png",
