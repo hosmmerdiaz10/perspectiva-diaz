@@ -116,4 +116,7 @@
     @apply absolute left-0 -bottom-1 h-px w-full bg-current origin-right scale-x-0 transition-transform duration-500;
   }
   .link-underline:hover::after { @apply scale-x-100 origin-left; }
+  
+  #lovable-badge {
+  display: none !important;
 }
