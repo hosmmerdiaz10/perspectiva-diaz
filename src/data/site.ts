@@ -84,9 +84,9 @@ export const SERVICES: Service[] = [
         description:
           "Renderizado de cocina que equilibra eficiencia y diseño: circulación fluida, iluminación estratégica y una composición sólida y elegante.",
         images: [
-          "/servicios/residencial/cocinayhabitacion/baño1.png",
-          "/servicios/residencial/cocinayhabitacion/baño2.png",
-          "/servicios/residencial/cocinayhabitacion/baño3.png",
+          "/servicios/residencial/cocinayhabitacion/bano1.png",
+          "/servicios/residencial/cocinayhabitacion/bano2.png",
+          "/servicios/residencial/cocinayhabitacion/bano3.png",
           "/servicios/residencial/cocinayhabitacion/01.png",
           "/servicios/residencial/cocinayhabitacion/02.png",
           "/servicios/residencial/cocinayhabitacion/03.png",
