@@ -198,6 +198,7 @@ export const SERVICES: Service[] = [
           "/servicios/residencial/habitacion-gb/06.png",
           "/servicios/residencial/habitacion-gb/07.png",
         ],
+      }, 
       { title: "Recorrido Oficinas" },
       { title: "Vista aérea conjunto" },
     ],
