@@ -46,7 +46,6 @@ export const SERVICES: Service[] = [
         description:
           "Arquitectura de cocina que equilibra eficiencia y diseño: circulación fluida, iluminación estratégica y una composición sólida y elegante.",
         images: [
-          "/servicios/residencial/cocina-lt/01.jpg",
           "/servicios/residencial/cocina-lt/02.JPEG",
           "/servicios/residencial/cocina-lt/03.JPEG",
           "/servicios/residencial/cocina-lt/04.JPEG",
