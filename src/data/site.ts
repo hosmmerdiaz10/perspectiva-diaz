@@ -141,6 +141,32 @@ export const SERVICES: Service[] = [
           "/servicios/comercial/consultorio/3.JPEG",
           "/servicios/comercial/consultorio/4.JPEG",
         ],      
+      },  
+    ],    
+  },      
+  {
+    id: "interiores",
+    number: "03",
+    title: "Diseño de Interiores",
+    tag: "Interiorismo",
+    description:
+      "Materialidad, iluminación y mobiliario seleccionados para crear atmósferas que perduran en el tiempo.",
+    bullets: ["Moodboard y paleta", "Selección de mobiliario", "Dirección de obra"],
+    portfolio: [
+      { title: "Salon de Pilates",
+        image: "/servicios/comercial/pilates/portada.png",
+        year: "2025",
+        location: "Valencia, Carabobo",
+        description:
+          "Diseño y renderizado, desarrollando una experiencia sofisticada mediante una ambientación relajante, iluminación envolvente y una identidad estética equilibrada.",
+        images: [
+          "/servicios/comercial/pilates/1.png",
+          "/servicios/comercial/pilates/2.png",
+          "/servicios/comercial/pilates/3.png",
+          "/servicios/comercial/pilates/4.png",
+          "/servicios/comercial/pilates/5.png",
+          "/servicios/comercial/pilates/6.png",
+        ],
       },
       { title: "Salon de Pilates",
         image: "/servicios/comercial/pilates/portada.png",
@@ -156,21 +182,7 @@ export const SERVICES: Service[] = [
           "/servicios/comercial/pilates/5.png",
           "/servicios/comercial/pilates/6.png",
         ],
-      },  
-    ],    
-  },      
-  {
-    id: "interiores",
-    number: "03",
-    title: "Diseño de Interiores",
-    tag: "Interiorismo",
-    description:
-      "Materialidad, iluminación y mobiliario seleccionados para crear atmósferas que perduran en el tiempo.",
-    bullets: ["Moodboard y paleta", "Selección de mobiliario", "Dirección de obra"],
-    portfolio: [
-      { title: "Loft Valencia" },
-      { title: "Penthouse Guacara" },
-      { title: "Suite Master" },
+      },
     ],
   },
   {
