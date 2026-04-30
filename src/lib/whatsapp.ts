@@ -14,21 +14,55 @@ export interface QuoteForm {
 }
 
 export function buildQuoteMessage(d: Partial<QuoteForm>): string {
-  const lines = [
-    "*Nueva solicitud de cotización — Perspectiva Díaz*",
+  const row = (label: string, value?: string) =>
+    value && value.trim() ? `*${label}:* ${value.trim()}` : null;
+
+  const fecha = new Date().toLocaleDateString("es-VE", {
+    day: "2-digit",
+    month: "long",
+    year: "numeric",
+  });
+
+  const saludo = d.nombre?.trim()
+    ? `Hola, soy *${d.nombre.trim()}* 👋`
+    : "Hola 👋";
+
+  const contacto = [
+    row("Email", d.email),
+    row("Teléfono", d.telefono),
+    row("Ubicación", d.ubicacion),
+  ].filter(Boolean);
+
+  const proyecto = [
+    row("Servicio", d.servicio),
+    row("Tipo de proyecto", d.tipoProyecto),
+    row("Área aprox.", d.area ? `${d.area} m²` : undefined),
+    row("Presupuesto", d.presupuesto),
+  ].filter(Boolean);
+
+  const sections: string[] = [
+    "🏛️ *PERSPECTIVA DÍAZ — Nueva cotización*",
+    `_${fecha}_`,
     "",
-    `• *Nombre:* ${d.nombre || "—"}`,
-    `• *Email:* ${d.email || "—"}`,
-    `• *Teléfono:* ${d.telefono || "—"}`,
-    `• *Servicio:* ${d.servicio || "—"}`,
-    `• *Tipo de proyecto:* ${d.tipoProyecto || "—"}`,
-    `• *Ubicación:* ${d.ubicacion || "—"}`,
-    `• *Área aprox. (m²):* ${d.area || "—"}`,
-    "",
-    "*Mensaje:*",
-    d.mensaje || "—",
+    saludo,
+    "Me gustaría recibir información para el siguiente proyecto:",
   ];
-  return lines.join("\n");
+
+  if (contacto.length) {
+    sections.push("", "👤 *Datos de contacto*", ...contacto);
+  }
+
+  if (proyecto.length) {
+    sections.push("", "📐 *Detalles del proyecto*", ...proyecto);
+  }
+
+  if (d.mensaje?.trim()) {
+    sections.push("", "📝 *Sobre el proyecto*", d.mensaje.trim());
+  }
+
+  sections.push("", "—", "Quedo atento a su respuesta. ¡Gracias!");
+
+  return sections.join("\n");
 }
 
 export function whatsappLink(message: string, number = WHATSAPP_NUMBER) {
