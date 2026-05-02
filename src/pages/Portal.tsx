@@ -5,11 +5,10 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { toast } from "sonner";
 import PortalApp from "@/components/portal/PortalApp";
-import { Loader2, Lock } from "lucide-react";
+import { Loader2, Lock, ShieldAlert } from "lucide-react";
 
 export default function Portal() {
-  const { user, loading, signIn, signUp } = useAuth();
-  const [mode, setMode] = useState<"signin" | "signup">("signin");
+  const { user, loading, signIn } = useAuth();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [busy, setBusy] = useState(false);
@@ -27,26 +26,24 @@ export default function Portal() {
   const onSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setBusy(true);
-    const fn = mode === "signin" ? signIn : signUp;
-    const { error } = await fn(email.trim().toLowerCase(), password);
+    const { error } = await signIn(email.trim().toLowerCase(), password);
     setBusy(false);
     if (error) {
-      toast.error(error.includes("autorizado") ? "Correo no autorizado." : error);
-    } else if (mode === "signup") {
-      toast.success("Cuenta creada. Bienvenido.");
+      toast.error("Credenciales inválidas o correo no autorizado.");
     }
   };
 
   return (
-    <div className="min-h-screen grid place-items-center bg-background px-4">
+    <div className="min-h-screen grid place-items-center bg-background px-4 py-12">
       <div className="w-full max-w-sm">
-        <div className="text-center mb-8">
-          <div className="inline-flex w-12 h-12 rounded-full bg-secondary items-center justify-center mb-4">
-            <Lock className="w-5 h-5 text-foreground" />
+        <div className="text-center mb-10">
+          <div className="inline-flex w-14 h-14 rounded-full bg-secondary items-center justify-center mb-5 shadow-sm">
+            <Lock className="w-6 h-6 text-foreground" />
           </div>
           <h1 className="font-serif text-3xl tracking-tight">Portal privado</h1>
-          <p className="text-sm text-muted-foreground mt-2">
-            Acceso restringido. Solo correos autorizados.
+          <p className="text-sm text-muted-foreground mt-2 leading-relaxed">
+            Acceso restringido por invitación.<br />
+            Solo correos autorizados pueden entrar.
           </p>
         </div>
 
@@ -70,7 +67,7 @@ export default function Portal() {
               type="password"
               required
               minLength={6}
-              autoComplete={mode === "signin" ? "current-password" : "new-password"}
+              autoComplete="current-password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               placeholder="••••••••"
@@ -78,17 +75,14 @@ export default function Portal() {
           </div>
           <Button type="submit" disabled={busy} className="w-full">
             {busy && <Loader2 className="w-4 h-4 animate-spin mr-2" />}
-            {mode === "signin" ? "Entrar" : "Crear cuenta"}
+            Entrar
           </Button>
         </form>
 
-        <button
-          type="button"
-          onClick={() => setMode(mode === "signin" ? "signup" : "signin")}
-          className="block w-full text-center text-xs text-muted-foreground hover:text-foreground mt-6 link-underline"
-        >
-          {mode === "signin" ? "Primera vez aquí — crear cuenta" : "Ya tengo cuenta — entrar"}
-        </button>
+        <div className="mt-8 flex items-start gap-2 text-xs text-muted-foreground bg-secondary/50 border border-border rounded-md px-3 py-2.5">
+          <ShieldAlert className="w-3.5 h-3.5 mt-0.5 shrink-0" />
+          <span>El registro está cerrado. Si necesitas acceso, contacta al administrador.</span>
+        </div>
       </div>
     </div>
   );
